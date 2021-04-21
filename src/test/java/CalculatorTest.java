@@ -31,4 +31,13 @@ public class CalculatorTest {
         assertTrue(Calculator.moreThan100(valueThree));
     }
 
+    @Test
+    public void checkPersonThresholdTest() {
+        //GIVEN
+        int numberOfPeople = 31;
+
+        //THEN
+        assertEquals("Zu viele Personen, sofort zurück", Calculator.checkPersonThreshold(numberOfPeople));
+    }
+
 }
